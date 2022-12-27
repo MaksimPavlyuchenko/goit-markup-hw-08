@@ -1,0 +1,29 @@
+.section-edge{
+    padding-top: 94px;
+    padding-bottom: 94px;}
+.edge-list{display: flex;
+           list-style: none;}
+.icon{
+    width: 70px;
+    height: 70px;}
+.edge-list__icon{
+    display: flex;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    background-color:  #F5F4FA;}
+.edge-list__item:not(:last-child) {
+    margin-right: 30px;}
+.edge-list__title{
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        margin-top: 30px;}
+.edge-list__text{
+        color: var(--additional-text-color);
+        line-height:1.71;
+        letter-spacing: 0.03em;}

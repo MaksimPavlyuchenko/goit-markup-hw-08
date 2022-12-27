@@ -1,0 +1,42 @@
+.contact-list{
+    display:flex;
+    justify-content: center;
+    margin-left: auto;
+    list-style: none;}
+.contact-list .contact-list__item+.contact-list__item{
+    margin-left: 50px;}
+.contact-list__link {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    color:var(--additional-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;  
+
+    transition:color 250ms 
+    cubic-bezier(0.4, 0, 0.2, 1);
+         &:hover,&:focus{color:var(--akcent-color)}}
+.contact-list__icon{
+        width: 16px;
+        height: 12px;
+        fill: var(--additional-text-color);
+        margin-right: 10px;
+        transition: fill 250ms 
+        cubic-bezier(0.4, 0, 0.2, 1) ;}
+.contact-list__icon--phone{
+        fill: var(--additional-text-color);
+        width: 10px;
+        height: 16px;
+        margin-right: 10px;
+        transition:fill 250ms 
+        cubic-bezier(0.4, 0, 0.2, 1) ;
+       }
+.contact-list__link:hover .contact-list__icon,
+.contact-list__link:focus .contact-list__icon,
+.contact-list__link:hover .contact-list__icon--phone,
+.contact-list__link:focus .contact-list__icon--phone{
+        color: var(--akcent-color);
+        fill: var(--akcent-color)
+        }

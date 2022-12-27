@@ -1,0 +1,32 @@
+.section-activity{
+    padding-bottom: 94px;} 
+.section-activity__title{ 
+    font-size: 36px;
+    line-height:1.17;
+    letter-spacing: 0.03em;
+    margin-bottom:50px;
+    text-align: center;}    
+.activity-list{
+    display: flex;
+    gap: 30px;
+    list-style: none;} 
+.activity-list__text{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0; 
+    padding: 27px;
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height:1.143;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color:var(--primery-white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+}
+.activity-list__item{
+    position: relative;
+}
