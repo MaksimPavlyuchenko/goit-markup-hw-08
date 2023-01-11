@@ -1,0 +1,14 @@
+.logo{
+    @extend%linkStyle;
+    font-family: Raleway,sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    color:$active-color;
+   }
+.logo--right{margin-right: 92px;}     
+.logo__part{color:$main-text-color;
+         }  
+.logo__part--footer{color:$main-white-color;}

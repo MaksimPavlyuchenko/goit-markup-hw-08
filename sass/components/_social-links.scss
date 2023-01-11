@@ -1,0 +1,30 @@
+.social-links-list{
+    @extend%listStyle;
+    @extend%flexCenter;
+    gap: 10px;
+}            
+.social-link{
+    @extend%linkStyle;
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    transition:background 250ms $time-function;
+    &:hover, &:focus{
+        background-color:$active-color;
+        cursor: pointer;}
+    &:hover .social-icon, &:focus .social-icon{fill:$main-white-color;}    
+    &--footer-bc{ background-color: rgba(255, 255, 255, 0.1);} 
+       
+}
+.social-icon{
+    fill:$main-icon-color;
+    transition: fill 250ms $time-function;
+    &--footer-color{fill:$main-white-color;} 
+}
+
