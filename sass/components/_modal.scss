@@ -30,8 +30,9 @@
 
     background-color: $main-white-color;
 
-    transition: transform 250ms $time-function;
-    &__close-btn{
+    transition: transform 250ms $time-function;}
+
+.modal__close-btn{
         position:absolute;
         top:8px;
         right: 8px;
@@ -47,21 +48,21 @@
         background-color:$main-white-color;
     
         transition: fill 250ms $time-function;}
-        &__close-btn:hover{
+.modal__close-btn:hover{
             cursor: pointer;
             fill: $active-color;
             box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
                         rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;}
-    &__header{
+.modal__header{
         text-align: center;
         margin:0 0 12px 0;
     
         font-size: 20px;
         line-height:1.15;
         letter-spacing: 0.03em;}                    
-}
-.modal-form{
-    &__label{
+
+
+.modal-form__label{
         display: inline-block;
         margin-bottom: 4px;
     
@@ -71,10 +72,11 @@
     
         color:$second-text-color;
         cursor: pointer;}
-    &__box{
+.modal-form__box{
         position: relative;
-        margin-bottom: 10px;}  
-    &__input{ 
+        margin-bottom: 10px;
+                }  
+.modal-form__input{ 
         padding: 11px 12px 11px 42px;
         width: 100%;
         outline: none;
@@ -82,9 +84,11 @@
         border-radius: 4px;
         cursor: pointer;
     
-        transition: border 250ms $time-function;} 
-    &__input:focus{border-color:$active-color;}
-    &__icon{
+        transition: border 250ms $time-function; 
+    &:focus{border-color:$active-color;}
+    &:focus+.modal-form__icon{ fill:$active-color;}
+                  }
+.modal-form__icon{
         position: absolute;
         left: 12px;
         top:50%;
@@ -92,8 +96,8 @@
     
         transition: fill 250ms $time-function;
         cursor: pointer;}
-    &__input:focus+&__icon{ fill:$active-color;}
-    &__area{
+  
+.modal-form__area{
         width: 100%;
         padding: 12px 16px;
         margin-bottom: 20px;
@@ -106,19 +110,21 @@
     
         outline: none;
     
-        transition: border 250ms $time-function;}
-    &__area::placeholder{
+        transition: border 250ms $time-function;
+ &::placeholder{
         font-size: 12px;
         line-height:1.16;
         letter-spacing: 0.01em;
     
-        color: rgba(117, 117, 117, 0.5);} 
-    &__area:focus{border-color:$active-color;}
-    &__terms-box{
+        color: rgba(117, 117, 117, 0.5);}
+ &:focus{border-color:$active-color;} 
+                }
+   
+.modal-form__terms-box{
         @extend%flexCenter;
         
         margin-bottom: 30px;}
-    &__terms{
+.modal-form__terms{
         position: relative;
 
         padding-left: 9px;
@@ -128,7 +134,7 @@
     
         color:$second-text-color;
         cursor: pointer;} 
-    &__checkbox{ 
+.modal-form__checkbox{ 
         position: absolute;
 
         width: 1px;
@@ -141,8 +147,8 @@
        
         border:0;
         
-        clip: rect(0 0 0 0);}     
-    &__checkbox:checked+&__custom-checkbox{ 
+        clip: rect(0 0 0 0);    
+ &:checked+.modal-form__custom-checkbox{ 
         background-color:$active-color;
         border-color: transparent;
         background-image: url(../images/icon-check.svg);
@@ -151,7 +157,8 @@
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px 
                                 rgba(0, 0, 0, 0.14), 0px 2px 1px
                                 rgba(0, 0, 0, 0.2);}
-    &__custom-checkbox{
+                    }
+.modal-form__custom-checkbox{
         position: absolute;
         display:block;
         left:-16px;
@@ -163,14 +170,14 @@
     
         border: 2px solid $main-text-color;
         border-radius: 2px;} 
-    &__link{
+.modal-form__link{
         display: inline-block;
     
         text-decoration-line: underline;
      
         color:$active-color;
         outline: none;}  
-    &__submit-btn{
+.modal-form__submit-btn{
         display: block;
         margin: 0 auto;
         padding: 10px 52px;
@@ -189,7 +196,8 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     
         cursor: pointer;
-        transition: background 250ms $time-function;} 
-    &__submit-btn:hover{background-color: #188CE8;}     
-}         
+        transition: background 250ms $time-function;
+    &:hover{background-color: #188CE8;} 
+                         }    
+         
 

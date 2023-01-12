@@ -10,8 +10,9 @@
     @extend%listStyle;
     @extend%flexCenter;
     gap:$main-gap;
-    &__item{position: relative;}
-    &__area{
+          }
+.work-list__item{position: relative;}
+.work-list__area{
         position: absolute;
         bottom: 0;
         width: 100%;
@@ -19,7 +20,7 @@
     
         text-align: center;
         background-color: rgba(47, 48, 58, 0.8);}
-    &__text{
+.work-list__text{
         font-weight: 700;
         font-size: 14px;
         line-height:calc(16/14);
@@ -28,7 +29,8 @@
          
         margin: 0;
       
-        color:$main-white-color;}
+        color:$main-white-color;
+                 }
 
-          }               
+                         
 

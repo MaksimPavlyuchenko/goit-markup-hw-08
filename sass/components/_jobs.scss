@@ -1,28 +1,31 @@
 
- .jobs-list{
+.jobs-list{
     @extend%listStyle;
     display: flex;
     flex-wrap: wrap;
     margin-left:calc(-1 * $main-gap);
     margin-top: calc(-1* $main-gap);
            }
- .jobs-card{
+.jobs-card{
   flex-basis: calc(100% / 3 - $main-gap);
   margin-left: $main-gap;
   margin-top: $main-gap;
-  &__link{
+          }
+.jobs-card__link{
     @extend%linkStyle;
     cursor: pointer;
-    transition: shadow 250ms $time-function;}
-  &__link:hover, &__link:focus{
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-    0px 4px 4px rgba(0, 0, 0, 0.06),
+    transition: shadow 250ms $time-function;
+  &:hover, &:focus{
+     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+     0px 4px 4px rgba(0, 0, 0, 0.06),
      1px 4px 6px rgba(0, 0, 0, 0.16);
      .jobs-card__overlay{transform: translateY(-100%);}}
-  &__thumb{
+                 }
+.jobs-card__thumb{
     position: relative;
-    overflow: hidden;}   
-  &__overlay{
+    overflow: hidden;
+                 }   
+.jobs-card__overlay{
     position: absolute;
 
     width: 100%;
@@ -38,19 +41,19 @@
     letter-spacing: 0.03em;
 
     color:$main-white-color;}  
-  &__content{
+.jobs-card__content{
     padding: 20px 24px;
 
     border: 1px solid #EEEEEE;
     border-top-color: transparent;}
-  &__header{
+.jobs-card__header{
     font-size: 18px;
     line-height: 2;
 
     margin:0 0 4px 0;
     
     letter-spacing: 0.06em;}  
-  &__name{
+.jobs-card__name{
     font-size: 16px;
     line-height: 1.88;
     
@@ -58,6 +61,7 @@
 
     letter-spacing: 0.03em;
 
-    color:$second-text-color;}     
- }
+    color:$second-text-color;
+                  }     
+ 
  

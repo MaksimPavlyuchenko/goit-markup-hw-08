@@ -9,27 +9,31 @@
  display: flex;
  gap:$second-gap;
  margin-right: auto;
+}  
     
-     &__item{
+.nav-list__item{
         font-weight: 500;
         line-height: 1.17;
         letter-spacing: 0.02em;
         color:$main-text-color;
      }
-     &__link{
+
+.nav-list__link{
         @extend%linkStyle;
         transition:color 250ms $time-function;
         padding: 32px 0;
-     }
-     &__link:hover, &__link:focus{
+     
+   &:hover, &:focus{
         cursor: pointer;
         color:$active-color;
-     }
-     &__link--current{
+                       }}
+
+.nav-list__link--current{
         position: relative;
         color:$active-color;
      }
-     &__link--current::after{
+
+.nav-list__link--current::after{
         content: "";
         position: absolute;
         bottom: -1px;
@@ -41,13 +45,14 @@
         background:$active-color;
         border-radius: 2px;
      }
-    }  
+   
 .contact-list{
    @extend%listStyle;
  display: flex;
  align-items: center;
  gap: 30px;
-     &__link{
+             }
+.contact-list__link{
         @extend%linkStyle;
         display: flex;
         align-items:center;
@@ -61,8 +66,8 @@
         fill: $second-text-color;
 
         transition:color 250ms $time-function;
-            }
-            &__link:hover{
+         
+       &:hover{
                 cursor: pointer;
                 color: $active-color; 
                 fill: $active-color;    

@@ -6,13 +6,13 @@
     text-align: center;
     letter-spacing: 0.03em;
   }       
-  .clients-list{
+.clients-list{
     @extend%listStyle;
       display: flex;
       justify-content: space-between;
       align-items: center;
   }
-  .client-link{
+.client-link{
     @extend%linkStyle;
       padding: 16px 32px;
   
@@ -28,7 +28,7 @@
         fill:$active-color;
         cursor: pointer;}  
   }
-  .client-icon{
+.client-icon{
       transition:fill 250ms $time-function ;
   }
   

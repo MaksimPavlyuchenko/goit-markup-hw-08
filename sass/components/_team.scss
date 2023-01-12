@@ -1,13 +1,12 @@
-.section-team{background-color: #F5F4FA;
-    &__title{
+.section-team{background-color: #F5F4FA;}
+.section-team__title{
         font-size: 36px;
         line-height: 1.17;
         text-align: center;
         letter-spacing: 0.03em;
     
-        margin: 0 0 50px 0;}
-}
-
+        margin: 0 0 50px 0;
+                     }
 .team-list{
     @extend%listStyle;
     @extend%flexCenter;

@@ -14,7 +14,8 @@
 .address-list{
       @extend%listStyle;
       &:nth-child(2){ margin:0 0 9px 0;}
-      &__point{
+             }
+.address-list__point{
             @extend%linkStyle;
             display: block;
             margin: 20px 0 9px 0;
@@ -25,7 +26,7 @@
             letter-spacing: 0.03em;
             
             color:$main-white-color;}
-      &__contact{
+.address-list__contact{
             @extend%linkStyle;
             font-style: normal;
             line-height: 1.71;
@@ -34,11 +35,11 @@
             
             color: rgba(255, 255, 255, 0.6);
       
-            transition: color 250ms $time-function;}
-      &__contact:hover, &__contact:focus{
+            transition: color 250ms $time-function;
+      &:hover, &:focus{
             cursor: pointer;
             color:$active-color;}
-        }      
+                        }      
 /* FOOTER-PART-TWO  */
 
 .footer-call{
@@ -54,8 +55,8 @@ color:$main-white-color;
 /* FOOTER-PART-THREE */
 
 .footer-form{
-      @extend%flexCenter;
-      &__header{
+      @extend%flexCenter;}
+.footer-form__header{
             margin-bottom: 20px;
     
             font-size: 14px;
@@ -64,7 +65,7 @@ color:$main-white-color;
             text-transform: uppercase;
         
             color:$main-white-color;}
-}
+
 .footer-input{
       padding: 15px 16px;
       width: 358px;
@@ -78,8 +79,8 @@ color:$main-white-color;
       outline: none;
       color: rgba(255, 255, 255, 0.6);
       transition: border 250ms $time-function;
-      &:focus{border-color:$active-color;}
-      &::placeholder{
+ &:focus{border-color:$active-color;}
+ &::placeholder{
             font-size: 16px;
             line-height: 1.25;
       
@@ -94,8 +95,8 @@ color:$main-white-color;
 
       background-color:$active-color;
       border-radius: 4px;
-      border-color: transparent;
-      &__text{
+      border-color: transparent;}
+.footer-btn__text{
             margin-right: 10px;
       
             font-weight: 700;
@@ -104,7 +105,7 @@ color:$main-white-color;
             letter-spacing: 0.06em;
       
             color:$main-white-color;}
-      &__icon{fill: $main-white-color;}      
-}
+.footer-btn__icon{fill: $main-white-color;}      
+
 
 
