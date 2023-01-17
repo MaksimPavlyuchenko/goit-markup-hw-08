@@ -2,11 +2,16 @@
     @extend%linkStyle;
     font-family: Raleway,sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
-
     color:$active-color;
+    text-align: center;
+    @media screen and (min-width:1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+        text-align: start;
+    }
    }
 .header__logo{margin-right: 92px;}     
 .logo__part{color:$main-text-color;

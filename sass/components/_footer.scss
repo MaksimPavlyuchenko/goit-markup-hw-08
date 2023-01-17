@@ -1,16 +1,27 @@
 
 .footer{
-      padding-top: 60px;
+        padding-top: 60px;
         padding-bottom: 60px;
         background-color: #2F303A;
      }         
 .footer-box{
+      @media screen and (min-width:1200px) {
       display: flex;
-      justify-content: space-between; 
+      justify-content: space-between;}
 }   
-
+.tablet-box{
+      @media screen and (min-width:768px) {
+        display: flex;
+        align-items:flex-start;
+        justify-content:space-around;}
+        }
 /* FOOTER-PART-ONE */
-
+.footer-box__part-one{
+      margin-bottom: 60px;
+      @media screen and (min-width:1200px) {
+        margin: 0 70px 0 0 ;    
+      }
+}
 .address-list{
       @extend%listStyle;
       &:nth-child(2){ margin:0 0 9px 0;}
@@ -22,40 +33,57 @@
       
             font-style: normal;
             line-height: 1.71;
-            
             letter-spacing: 0.03em;
+            text-align: center;
             
             color:$main-white-color;}
 .address-list__contact{
             @extend%linkStyle;
             font-style: normal;
             line-height: 1.71;
-            
+            text-align: center;
             letter-spacing: 0.03em;
             
             color: rgba(255, 255, 255, 0.6);
       
             transition: color 250ms $time-function;
+            @media screen and (min-width:1200px){
+               text-align: start;   
+            }
       &:hover, &:focus{
             cursor: pointer;
             color:$active-color;}
                         }      
 /* FOOTER-PART-TWO  */
-
+.footer-box__part-two{ 
+      margin-bottom: 60px;
+      @media screen and (min-width:1200px) {
+         margin: 0;   
+      }
+                     }
 .footer-call{
 margin-bottom: 20px;
 
 font-size: 14px;
-line-height:calc(16 / 14);
+line-height:1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
+text-align: center;
+@media screen and (min-width:1200px) {
+   text-align: start; 
+   margin-top: 12px;  
+}
 
 color:$main-white-color;
 }
 /* FOOTER-PART-THREE */
 
 .footer-form{
-      @extend%flexCenter;}
+      @media screen and (min-width:1200px) {
+         display: flex;
+         align-items: baseline;
+      }
+     }
 .footer-form__header{
             margin-bottom: 20px;
     
@@ -63,13 +91,17 @@ color:$main-white-color;
             line-height:1.14;
             letter-spacing: 0.03em;
             text-transform: uppercase;
-        
-            color:$main-white-color;}
+            text-align: center;
+            color:$main-white-color;
+      @media screen and (min-width:1200px) {
+            text-align: start;
+            margin-top: 12px;
+      }}
 
 .footer-input{
       padding: 15px 16px;
-      width: 358px;
-      margin-right: 12px;
+      width: 100%;
+      margin-bottom: 20px;
 
       border: 1px solid rgba(255, 255, 255, 0.3);
       border-radius: 4px;
@@ -79,6 +111,15 @@ color:$main-white-color;
       outline: none;
       color: rgba(255, 255, 255, 0.6);
       transition: border 250ms $time-function;
+      @media screen and (min-width:768px) {
+         display: block;   
+         width: 450px; 
+         margin: 0 auto 20px auto;
+      }
+      @media screen and (min-width:1200px) {
+          width:358px;
+          margin: 0 12px 0 0;  
+      }
  &:focus{border-color:$active-color;}
  &::placeholder{
             font-size: 16px;
@@ -89,22 +130,29 @@ color:$main-white-color;
             color: rgba(255, 255, 255, 0.6);}
 }
 .footer-btn{
-      @extend%flexCenter;
+      @extend%flexCenter; 
+      margin: 0 auto;
       
-      padding: 10px 28px;
+      padding: 10px 28px 10px 31px;
 
       background-color:$active-color;
       border-radius: 4px;
-      border-color: transparent;}
+      border-color: transparent;
+     @media screen and (min-width:1200px) {
+      padding: 10px 28px;
+     }}
 .footer-btn__text{
-            margin-right: 10px;
+            margin-right: 12px;
       
             font-weight: 700;
             font-size: 16px;
       
             letter-spacing: 0.06em;
       
-            color:$main-white-color;}
+            color:$main-white-color;
+      @media screen and (min-width:1200px){
+           margin-right: 10px; 
+      }}
 .footer-btn__icon{fill: $main-white-color;}      
 
 
