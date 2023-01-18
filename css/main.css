@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: -1px;
 }
 
-.filter-list, .modal-form__terms-box, .modal__close-btn, .footer-btn, .team-list, .social-links-list, .work-list, .nav {
+.filter-list, .modal-form__terms-box, .modal__close-btn, .footer-btn, .social-links-list, .work-list, .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,25 +192,45 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   background: rgba(47, 48, 58, 0.4);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-image: url(../images/Img-hero.jpeg);
+  background-image: url(../images/hero-img-mobile.jpeg);
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .section-hero {
+    background-image: url(../images/hero-img-tablet.jpeg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-hero {
+    background-image: url(../images/Img-hero.jpeg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+  }
 }
 
 .section-hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  width: 696px;
+  font-size: 26px;
+  line-height: 1.62;
+  width: 360px;
   margin: 0 auto 30px auto;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+@media screen and (min-width: 1200px) {
+  .section-hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+  }
 }
 
 .section-hero__btn {
@@ -218,7 +238,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  padding: 10px 32px;
+  padding: 10px 24px;
   letter-spacing: 0.06em;
   border-radius: 4px;
   border-color: transparent;
@@ -226,6 +246,11 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #2196F3;
   -webkit-transition: shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .section-hero__btn {
+    padding: 10px 32px;
+  }
 }
 .section-hero__btn:hover, .section-hero__btn:focus {
   background: #188CE8;
@@ -399,15 +424,62 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-team__title {
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  margin: 0 0 50px 0;
+  margin: 0 0 30px 0;
+}
+@media screen and (min-width: 1200px) {
+  .section-team__title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin: 0 0 50px 0;
+  }
 }
 
-.team-list {
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team-list__item {
+    width: 354px;
+    height: 536px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list__item {
+    width: 278px;
+    height: 428px;
+  }
 }
 
 .personal-card {
@@ -415,8 +487,13 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .personal-card {
+    padding-bottom: 30px;
+  }
 }
 
 .personal-name {
@@ -742,15 +819,23 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   width: 100%;
-  max-width: 521px;
+  max-width: 450px;
   height: 100%;
-  max-height: 581px;
+  max-height: 609px;
   padding: 40px;
   background-color: #FFFFFF;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 100%;
+    max-width: 521px;
+    height: 100%;
+    max-height: 581px;
+  }
 }
 
 .modal__close-btn {
@@ -777,7 +862,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   margin: 0 0 12px 0;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
 }
 
@@ -877,10 +962,17 @@ h1, h2, h3, h4, h5, h6 {
 .modal-form__terms {
   position: relative;
   padding-left: 9px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
   cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form__terms {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form__checkbox {
