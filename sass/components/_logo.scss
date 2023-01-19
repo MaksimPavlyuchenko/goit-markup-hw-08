@@ -13,7 +13,10 @@
         text-align: start;
     }
    }
-.header__logo{margin-right: 92px;}     
+.header__logo{margin-right:87px;
+@media screen and (min-width:1200px) {
+    margin-right: 92px;
+}}     
 .logo__part{color:$main-text-color;
          }  
 .logo__part-footer{color:$main-white-color;}
