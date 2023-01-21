@@ -18,7 +18,7 @@
   }
           }
 .jobs-card__link{
-    @extend%linkStyle;
+    @extend %linkStyle;
     cursor: pointer;
     transition: shadow 250ms $time-function;
   &:hover, &:focus{
