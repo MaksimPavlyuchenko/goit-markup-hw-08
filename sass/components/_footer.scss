@@ -7,25 +7,28 @@
 .footer-box{
       @media screen and (min-width:1200px) {
       display: flex;
-      justify-content: space-between;}
+      justify-content: space-between;
+      align-items: baseline;}
 }   
 .tablet-box{
       @media screen and (min-width:768px) {
         display: flex;
-        align-items:flex-start;
+        align-items:baseline;
         justify-content:space-around;}
         }
 /* FOOTER-PART-ONE */
 .footer-box__part-one{
       margin-bottom: 60px;
       @media screen and (min-width:1200px) {
-        margin: 0 70px 0 0 ;    
+        margin: 0 95px 0 0 ;    
       }
 }
 .address-list{
       @extend%listStyle;
-      &:nth-child(2){ margin:0 0 9px 0;}
              }
+.address-list__item:nth-child(2){
+      margin-bottom: 9px;
+}             
 .address-list__point{
             @extend%linkStyle;
             display: block;

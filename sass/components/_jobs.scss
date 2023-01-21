@@ -2,14 +2,20 @@
 .jobs-list{
     @extend%listStyle;
     display: flex;
+    @media screen and (max-width: 767px) {
+   flex-direction: column;
+    }
     flex-wrap: wrap;
     margin-left:calc(-1 * $main-gap);
     margin-top: calc(-1* $main-gap);
            }
-.jobs-card{
-  flex-basis: calc(100% / 3 - $main-gap);
+.jobs-list__item{
+  flex-basis: calc(100% / 2 - $main-gap);
   margin-left: $main-gap;
   margin-top: $main-gap;
+  @media screen and (min-width:1200px) {
+    flex-basis: calc(100% / 3 - $main-gap);
+  }
           }
 .jobs-card__link{
     @extend%linkStyle;
@@ -24,12 +30,15 @@
 .jobs-card__thumb{
     position: relative;
     overflow: hidden;
+    
                  }   
 .jobs-card__overlay{
     position: absolute;
 
-    width: 100%;
-    padding: 63px 24px;
+    max-width:100%;
+    
+
+    padding: 77px 24px;
     background-color:$active-color;
 
     transition: transform 250ms $time-function;
@@ -40,7 +49,14 @@
 
     letter-spacing: 0.03em;
 
-    color:$main-white-color;}  
+    color:$main-white-color;
+    @media screen and (max-width:375px) {
+       font-size: 12px;
+       height: 100%; 
+    }
+@media screen and (min-width:$desktop) {
+    padding: 63px 24px;
+}}  
 .jobs-card__content{
     padding: 20px 24px;
 

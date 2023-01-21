@@ -5,7 +5,7 @@
     line-height:1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:$desktop) {
       margin: 0 0 50px 0;
 
       font-size: 36px;
@@ -16,6 +16,7 @@
     @extend%listStyle;
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap:$main-gap;
             }
 .client-link{
@@ -28,10 +29,10 @@
       border: 1px solid $main-icon-color;
       border-radius: 4px;
       fill:$main-icon-color;
-      @media screen and (min-width:768px) {
+      @media screen and (min-width:$tablet) {
         padding: 15px 59px;
       }
-      @media screen and (min-width:1200px) {
+      @media screen and (min-width:$desktop) {
         padding: 15px 31px;
       }
   

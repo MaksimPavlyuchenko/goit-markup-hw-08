@@ -21,7 +21,8 @@
     top:50%;
     left:50%;
     transform: translate(-50%, -50%) scale(1);
-
+    
+    overflow-y: auto;
     width: 100%;
     max-width: 450px;
     height: 100%;
@@ -32,7 +33,7 @@
     background-color: $main-white-color;
 
     transition: transform 250ms $time-function;
-@media screen and (min-width:1200px) {
+@media screen and (min-width:$desktop) {
         width: 100%;
         max-width: 521px;
         height: 100%;
@@ -133,7 +134,12 @@
         margin-bottom: 30px;}
 .modal-form__terms{
         position: relative;
-
+@media screen and (max-width:479px) {
+        padding-left: 6px;
+        font-size: 8px;
+        line-height:1.17;
+        letter-spacing: 0.03em;
+}
         padding-left: 9px;
         font-size: 12px;
         line-height:1.17;
@@ -141,7 +147,7 @@
     
         color:$second-text-color;
         cursor: pointer;
-@media screen and (min-width:1200px) {
+@media screen and (min-width:$desktop) {
        font-size: 14px;
        line-height: 1.71; 
 }                       

@@ -23,16 +23,13 @@
     }         
 .plus-list__thumb{
         margin-bottom: 30px;
-        padding: 25px 190px;
-    
+        // padding: 25px 190px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-color:$back-btn-color;
         border-radius: 4px;
-        @media screen and (min-width:768px) {
-          padding: 25px 142px;      
-        }
-        @media screen and (min-width:1200px) {
-           padding: 25px 100px;     
-        }
                 }
 .plus-list__subtitle{
         font-weight: 700;

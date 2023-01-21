@@ -5,19 +5,19 @@
         text-align: center;
         letter-spacing: 0.03em;
         margin: 0 0 30px 0;
-        @media screen and (min-width:1200px) {
+        @media screen and (min-width:$desktop) {
             font-size: 36px;
             line-height: 1.17;
             margin: 0 0 50px 0;
         }}
 .team-list{
     @extend%listStyle;
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:$tablet) {
         display: flex;
         flex-wrap: wrap;
         gap:$main-gap;
     }
-    @media screen and (min-width:1200px){
+    @media screen and (min-width:$desktop){
         display: flex;
         justify-content: center;
         align-items: center;
@@ -25,10 +25,10 @@
     }} 
 .team-list__item {
     &:not(:last-child){ @media screen and (max-width:767px){margin-bottom: 30px;}}
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:$tablet) {
         width: 354px;
         }
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:$desktop) {
         width: 278px;
     }
     }              
@@ -42,7 +42,7 @@
           
     padding-bottom: 24px;      
     text-align: center;
-   @media screen and (min-width:1200px) {
+   @media screen and (min-width:$desktop) {
     padding-bottom: 30px;
    }
 

@@ -6,6 +6,11 @@
 
 .filter-list{
     @extend%listStyle;
+    @media screen and (max-width:767px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:flex-start;
+    }
     @extend%flexCenter;
         
         gap:8px;

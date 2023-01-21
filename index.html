@@ -196,11 +196,14 @@
             <li class="team-list__item">
               <div class="personal-card">
                 <img
-                  srcset="./images/img4.jpeg 1x, ./images/img4@2x.jpeg 2x"
-                  src="./images/img4.jpeg"
+                  srcset="
+                    ./images/img4-270.jpeg 270w,
+                    ./images/img4-354.jpeg 354w,
+                    ./images/img4-450.jpeg  450w
+                  "
+                  src="./images/img4-270.jpeg"
                   alt="Усміхнений хлопець в окулярах"
-                  width="450"
-                  height="460"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                 />
                 <h3 class="personal-name">Ігор Демʼяненко</h3>
                 <p class="personal-prof" lang="en">Product Designer</p>
@@ -235,12 +238,15 @@
             <li class="team-list__item">
               <div class="personal-card">
                 <img
-                  srcset="./images/img5.jpeg 1x, ./images/img5@2x.jpeg 2x"
-                  src="./images/img5.jpeg"
-                  alt="Усміхнена дівчина в окулярах"
-                  width="450"
-                  height="460"
-                />
+                srcset="
+                  ./images/img5-270.jpeg 270w,
+                  ./images/img5-354.jpeg 354w,
+                  ./images/img5-450.jpeg  450w
+                "
+                src="./images/img5-270.jpeg"
+                alt="Усміхнений хлопець в окулярах"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+              />
                 <h3 class="personal-name">Ольга Рєпіна</h3>
                 <p class="personal-prof" lang="en">Frontend Developer</p>
                 <ul class="social-links-list">
@@ -274,11 +280,14 @@
             <li class="team-list__item">
               <div class="personal-card">
                 <img
-                  srcset="./images/img6.jpeg 1x, ./images/img6@2x.jpeg 2x"
-                  src="./images/img6.jpeg"
-                  alt="Усміхнений хлопець с зачіскою"
-                  width="450"
-                  height="460"
+                  srcset="
+                    ./images/img6-270.jpeg 270w,
+                    ./images/img6-354.jpeg 354w,
+                    ./images/img6-450.jpeg  450w
+                  "
+                  src="./images/img6-270.jpeg"
+                  alt="Усміхнений хлопець в окулярах"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                 />
                 <h3 class="personal-name">Микола Тарасов</h3>
                 <p class="personal-prof" lang="en">Marketing</p>
@@ -313,11 +322,14 @@
             <li class="team-list__item">
               <div class="personal-card">
                 <img
-                srcset="./images/img7.jpeg 1x, ./images/img7@2x.jpeg 2x"
-                  src="./images/img7.jpeg"
-                  alt="Усміхнений хлопець в окулярах та с бородою"
-                  width="450"
-                  height="460"
+                  srcset="
+                    ./images/img7-270.jpeg 270w,
+                    ./images/img7-354.jpeg 354w,
+                    ./images/img7-450.jpeg  450w
+                  "
+                  src="./images/img7-270.jpeg"
+                  alt="Усміхнений хлопець в окулярах"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                 />
                 <h3 class="personal-name">Михайло Єрмаков</h3>
                 <p class="personal-prof" lang="en">UI Designer</p>
@@ -601,28 +613,50 @@
         </svg>
       </button>
       <ul class="mobile-menu">
-        <li class="mobile-menu__item mobile-menu__item--current">
-          <a href="#" class="link"></a>Студія
+        <li class="mobile-menu__item">
+          <a
+            href="./index.html"
+            class="mobile-menu__link mobile-menu__link--current"
+            >Студія</a
+          >
         </li>
         <li class="mobile-menu__item">
-          <a href="#" class="link"></a>Портфоліо
+          <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
         </li>
-        <li class="mobile-menu__item"><a href="#" class="link"></a>Контакти</li>
-      </ul>
-      <ul class="menu-contact">
-        <li class="menu-contact__item menu-contact__item--current">
-          <a href="tel:+380961111111"></a>+38 096 111 11 11
-        </li>
-        <li class="menu-contact__item">
-          <a href="mailto:info@devstudio.com"></a>info@devstudio.com
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">Контакти</a>
         </li>
       </ul>
-      <ul class="menu-social-link">
-        <li class="menu-social-link__item"><a href="#"></a>instagram</li>
-        <li class="menu-social-link__item"><a href="#"></a>Twitter</li>
-        <li class="menu-social-link__item"><a href="#"></a>Facebook</li>
-        <li class="menu-social-link__item"><a href="#"></a>linkedin</li>
-      </ul>
+      <div class="menu-box">
+        <ul class="menu-contact">
+          <li class="menu-contact__item">
+            <a
+              href="tel:+380961111111"
+              class="menu-contact__link menu-contact__link--current"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="menu-contact__item">
+            <a href="mailto:info@devstudio.com" class="menu-contact__link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="menu-social-link">
+          <li class="menu-social-link__item">
+            <a class="mobile-social-link" href="#">instagram</a>
+          </li>
+          <li class="menu-social-link__item">
+            <a class="mobile-social-link" href="#">Twitter</a>
+          </li>
+          <li class="menu-social-link__item">
+            <a class="mobile-social-link" href="#">Facebook</a>
+          </li>
+          <li class="menu-social-link__item">
+            <a class="mobile-social-link" href="#">linkedin</a>
+          </li>
+        </ul>
+      </div>
     </div>
     <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
